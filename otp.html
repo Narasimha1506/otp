@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <script>
+
+        let div1=document.createElement("div")
+        document.body.appendChild(div1)
+        div1.style.height="400px"
+        div1.style.width="400px"
+        div1.style.border="2px solid black";
+        div1.style.borderRadius="20px";
+        div1.style.display="grid"
+        div1.style.justifyContent="center"
+        div1.style.alignContent="center"
+        div1.style.backgroundColor="aqua";
+        div1.style.marginLeft="550px";
+
+        let a=document.createElement("h2")
+        a.innerHTML="Otp Generator"
+        div1.appendChild(a)
+        a.style.color="red";
+        a.style.marginTop="-10px";
+        
+
+        let ab=document.createElement("h2")
+        div1.appendChild(ab)
+        div1.style.display="grid"
+        ab.style.border="1px solid black";
+        ab.style.height="20px";
+        ab.style.display="grid";
+        ab.style.justifyContent="center";
+        ab.style.padding="10px"
+       
+        let d=document.createElement("button")
+         d.innerHTML="click me"
+         div1.appendChild(d)
+        d.addEventListener('click',()=>{
+            let a
+             let k =Math.random()* 10000+1
+            let s=Math.floor(k)
+             console.log(s)
+             ab.innerHTML=s
+        })
+
+
+
+    </script>
+</body>
+</html>
